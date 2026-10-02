@@ -1,0 +1,8 @@
+{
+  "name": "Auto Escola Ximenes",
+  "description": "Auto Escola Ximenes em Fortaleza - CE. Atendimento próximo, orientação clara e uma experiência mais leve para quem deseja iniciar ou avançar no processo de habilitação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

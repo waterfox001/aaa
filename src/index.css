@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Brand Yellows (10% Accent) */
+    --color-brand-yellow: #FFC905;
+    --color-brand-yellow-secondary: #FCC90D;
+    --color-brand-gold: #D9AC0B;
+    --color-brand-yellow-soft: #FFF8DB;
+
+    /* Warm Grays */
+    --color-gray-warm-medium: #878373;
+    --color-gray-warm-dark: #5E5C52;
+
+    /* Clean Neutrals (60% Light, 30% Graphite/Dark) */
+    --color-bg-white: #FFFFFF;
+    --color-bg-offwhite: #F8F9FA;
+    --color-bg-alt: #F1F3F5;
+    --color-border-subtle: #E5E7EB;
+    --color-text-graphite: #1E232A;
+    --color-text-secondary: #4B5563;
+    --color-text-muted: #6B7280;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #1E232A;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC905;
+}
+
+/* Subtle clean geometric road/grid accents */
+.bg-clean-grid {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-clean-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Clean glass panel */
+.glass-panel-clean {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.shadow-clean-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-clean-md {
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-clean-lg {
+  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-yellow-soft {
+  box-shadow: 0 4px 16px -2px rgba(255, 201, 5, 0.3);
+}
+
+/* Fluid Yellow Gradient Buttons */
+.cta-yellow,
+.btn-yellow-fluid {
+  background: linear-gradient(
+    110deg,
+    #f5c400 0%,
+    #ffd83d 35%,
+    #f2b900 65%,
+    #ffda36 100%
+  );
+  background-size: 220% 100%;
+  animation: yellow-flow 5s ease-in-out infinite;
+  transition:
+    transform 220ms ease,
+    filter 220ms ease,
+    box-shadow 220ms ease;
+  color: #0F172A !important;
+  font-weight: 800;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px -2px rgba(245, 196, 0, 0.35);
+}
+
+.cta-yellow:hover,
+.btn-yellow-fluid:hover {
+  animation-duration: 2.8s;
+  transform: translateY(-2px);
+  filter: saturate(1.08) brightness(1.03);
+  box-shadow: 0 8px 20px -3px rgba(245, 196, 0, 0.45);
+}
+
+.cta-yellow:active,
+.btn-yellow-fluid:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px -1px rgba(245, 196, 0, 0.3);
+}
+
+@keyframes yellow-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-yellow-fluid {
+  background: linear-gradient(
+    110deg,
+    #f5c400 0%,
+    #ffd83d 35%,
+    #f2b900 65%,
+    #ffda36 100%
+  );
+  background-size: 220% 100%;
+  animation: yellow-flow 5s ease-in-out infinite;
+}
+
+/* Subtle card styling for natural agency-grade commercial finish */
+.topic-reveal-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.topic-reveal-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
+}
+
+/* Scroll progress bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #f5c400, #ffd83d, #D9AC0B);
+  transform-origin: 0%;
+  z-index: 9999;
+}
+
+/* Subtle animations */
+@keyframes pulseSubtle {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.92; }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3.5s ease-in-out infinite;
+}
+
+@keyframes slowShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-slow {
+  background-size: 200% 200%;
+  animation: slowShimmer 8s ease infinite;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .cta-yellow,
+  .btn-yellow-fluid,
+  .bg-yellow-fluid {
+    animation: none !important;
+    transform: none !important;
+  }
+}

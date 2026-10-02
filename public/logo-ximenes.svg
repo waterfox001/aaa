@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="100%" height="100%">
+  <!-- Auto Escola Text -->
+  <text x="65" y="46" font-family="'Montserrat', 'Arial Rounded MT Bold', -apple-system, sans-serif" font-weight="900" font-size="34" fill="#000000" letter-spacing="-0.5">Auto Escola</text>
+
+  <!-- Road Stroke 1: Left Top to Bottom-Left Leg of X -->
+  <!-- Black Road Base -->
+  <path d="M 65 68 L 140 68 C 168 68 178 88 170 112 L 126 198" fill="none" stroke="#000000" stroke-width="26" stroke-linecap="square" stroke-linejoin="round" />
+  <!-- Yellow Dashed Lane Markings -->
+  <path d="M 68 68 L 140 68 C 168 68 178 88 170 112 L 126 198" fill="none" stroke="#FFC905" stroke-width="3.5" stroke-dasharray="10 8" stroke-linecap="butt" />
+
+  <!-- Road Stroke 2: Top-Right of X curving to Bottom Road Under IMENES -->
+  <!-- Black Road Base -->
+  <path d="M 216 90 L 180 166 C 173 183 182 195 204 195 L 685 195" fill="none" stroke="#000000" stroke-width="26" stroke-linecap="square" stroke-linejoin="round" />
+  <!-- Yellow Dashed Lane Markings -->
+  <path d="M 214 94 L 180 166 C 173 183 182 195 204 195 L 685 195" fill="none" stroke="#FFC905" stroke-width="3.5" stroke-dasharray="10 8" stroke-linecap="butt" />
+
+  <!-- IMENES Wordmark -->
+  <!-- Letter I -->
+  <path d="M 230 118 L 254 118 L 254 182 L 230 182 Z" fill="#000000" />
+
+  <!-- Letter M -->
+  <path d="M 268 182 L 268 118 L 294 118 L 309 155 L 324 118 L 350 118 L 350 182 L 328 182 L 328 144 L 317 172 L 301 172 L 290 144 L 290 182 Z" fill="#000000" />
+
+  <!-- Traffic Sign (E) -->
+  <g transform="translate(398, 150)">
+    <!-- Red Circular Border -->
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#DE2121" stroke-width="7.5" />
+    <!-- Letter E inside Traffic Sign -->
+    <text x="0" y="12" font-family="'Montserrat', 'Arial Black', -apple-system, sans-serif" font-weight="900" font-size="36" fill="#000000" text-anchor="middle">E</text>
+  </g>
+
+  <!-- Letter N -->
+  <path d="M 445 182 L 445 118 L 471 118 L 500 159 L 500 118 L 522 118 L 522 182 L 496 182 L 467 141 L 467 182 Z" fill="#000000" />
+
+  <!-- Letter E -->
+  <path d="M 536 182 L 536 118 L 588 118 L 588 135 L 560 135 L 560 142 L 585 142 L 585 158 L 560 158 L 560 165 L 588 165 L 588 182 Z" fill="#000000" />
+
+  <!-- Letter S -->
+  <path d="M 601 170 C 604 177 612 183 623 183 C 635 183 642 177 642 169 C 642 159 634 155 617 150 C 600 145 590 139 590 127 C 590 115 603 107 620 107 C 637 107 649 116 652 128 L 632 132 C 630 126 626 122 620 122 C 613 122 609 125 609 130 C 609 135 614 138 626 142 C 646 148 662 154 662 170 C 662 185 646 195 623 195 C 604 195 591 184 585 169 Z" fill="#000000" />
+
+  <!-- Slogan Under Road -->
+  <text x="445" y="218" font-family="'Montserrat', -apple-system, sans-serif" font-weight="500" font-size="16.5" fill="#1E232A" text-anchor="middle" letter-spacing="0.3">Educando para o trânsito do futuro</text>
+</svg>
